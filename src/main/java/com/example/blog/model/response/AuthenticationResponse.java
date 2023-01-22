@@ -1,4 +1,4 @@
-package com.example.blog.model;
+package com.example.blog.model.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,10 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class AuthenticationRequest {
+public class AuthenticationResponse {
+    private String firstname;
+    private String lastname;
     private String username;
-    private String password;
+    private String token;
+    private String error;
 }

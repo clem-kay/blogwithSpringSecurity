@@ -11,7 +11,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "_blogPost")
+@Table(name = "_blogPosts")
 public class Blog {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)

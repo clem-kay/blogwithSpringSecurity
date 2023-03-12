@@ -35,7 +35,7 @@ public class User implements UserDetails {
     private Boolean isEnabled;
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "createdby", referencedColumnName = "id")
-    private List<PropertyOwner> propertyowners;
+    private List<Blog> blog;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

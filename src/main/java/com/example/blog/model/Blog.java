@@ -1,12 +1,9 @@
 package com.example.blog.model;
 
-import com.example.blog.enumeration.Gender;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalDate;
 import java.util.Date;
-import java.util.List;
 
 @Setter
 @Getter
@@ -14,18 +11,14 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "_propertyowner")
-public class PropertyOwner {
+@Table(name = "_blogPost")
+public class Blog {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id", nullable = false)
     private Long id;
-    private String firstname;
-    private String lastname;
-    private String email;
-    private int telephone;
-    @Enumerated(EnumType.STRING)
-    private Gender gender;
+    private String title;
+    private String details;
     private Date createdAt;
     private Date updatedAt;
     @ManyToOne(optional = false)

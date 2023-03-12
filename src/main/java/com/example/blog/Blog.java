@@ -11,10 +11,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootApplication
-public class RevenueDBManager {
+public class Blog {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RevenueDBManager.class, args);
+		SpringApplication.run(Blog.class, args);
 	}
 
 	@Bean
@@ -34,5 +34,4 @@ public class RevenueDBManager {
 			repository.save(user);
 		};
 	}
-
 }
